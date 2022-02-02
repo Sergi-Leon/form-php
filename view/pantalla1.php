@@ -8,9 +8,12 @@
 </head>
 <body>
     <h1>Mostrar datos del formulario</h1>
+    <form action="../proc/res.proc.php" method="post">
+        <input type="text" name="pokemon2" placeholder="Inserte pokemon ...">
+        <input type="submit">
+    </form>
     <?php
-    echo '<p>'.$_REQUEST['nombre'].'</p>';
-    echo $_REQUEST['pwd'];
+    
     ?>
 </body>
 </html>
