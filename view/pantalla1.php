@@ -8,6 +8,12 @@
     <title>Recogida de datos</title>
 </head>
 <body>
+    <?php
+    session_start();
+    if ($_SESSION["pantalla1"]!='check') {
+        header("Location: ../index.php");
+    }
+    ?>
     <h1>Mostrar datos del formulario</h1>
     <form action="../proc/res.proc.php" method="post">
         <input type="text" name="pokemon2" placeholder="Inserte pokemon ...">
