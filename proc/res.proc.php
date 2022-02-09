@@ -10,7 +10,7 @@ if (isset($_POST['pokemon'])) {
     if ($_POST['pokemon2']=='charmander') {
         header('Location: ../view/pantalla2.php');
     } else {
-        header('Location: ../view/pantalla1.php');
+        header('Location: ../view/pantalla1.php?msg=04');
     }
 }
 
